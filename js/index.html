@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <div class="alert-box" id="alert">
+        <p>Alert 박스</p>
+        <button id="close">x</button>
+    </div>
+
+    <div>
+
+    <button onclick="button_id('id를 입력안하셨어요');">버튼1</button>
+
+    <button onclick="button_id('pw를 입력안하셨어요');">버튼2</button>
+
+</div>
+
+    <script>
+
+document.getElementById('close').addEventListener('click',function(){
+document.getElementById('alert').style.display='none';
+});
+
+
+
+
+
+
+
+
+function button_id(text){
+    document.getElementById('alert').innerHTML=text;
+}
+
+    </script>
+
+</body>
+</html>
